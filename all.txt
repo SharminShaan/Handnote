@@ -1,0 +1,11 @@
+// cat, sub  cat  id with name show
+
+@php
+                                $subcat_id = $row->subcats_id;
+                                $catdata = DB::table('sub_categories')->where('id', '=', $subcat_id)->get();
+ @endphp
+
+                            <td>{{ $catdata[0]->sub_cat_name }}</td>
+
+
+// 
